@@ -1,0 +1,228 @@
+/* -----------------------------------------
+	11. Global Mediaqueries
+----------------------------------------- */
+
+@media ( max-width: $screen-md-max ) {
+	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	.row {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
+
+@media ( max-width: $screen-sm-max ) {
+	#page {
+		padding-top: 48px; /* For mobile bar */
+	}
+
+	.navigation {
+		display: none;
+	}
+
+	.flickr_badge_image {
+		width: 11.111111111%;
+	}
+
+	.widget .instagram-pics li {
+		width: 20%;
+	}
+
+	.tracklisting {
+		.track-info {
+			float: none;
+			display: block;
+		}
+
+		.track-no {
+			display: none;
+		}
+	}
+
+	.list-item.product {
+		.item-thumb {
+			display: table-cell;
+		}
+	}
+
+	.sidebar.col-md-3 {
+		.list-item {
+			display: table;
+			width: 100%;
+
+			> a {
+				display: table-cell;
+				vertical-align: top;
+				width: 30%;
+
+				img {
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.list-item-info {
+				display: table-cell;
+				vertical-align: top;
+				overflow: hidden;
+				width: 70%;
+			}
+		}
+
+		.widget_ci_event_widget {
+			.tour-event-thumb {
+				display: none;
+			}
+		}
+	}
+}
+
+
+@media ( max-width: $screen-xs-max ) {
+
+	#header,
+	.widgets-head {
+		text-align: center;
+	}
+
+	#logo {
+		margin-bottom: 15px;
+
+		p {
+			font-size: 13px;
+		}
+	}
+
+	.widgets-head {
+		margin-bottom: 15px;
+	}
+
+	#slider {
+		margin-bottom: 35px;
+	}
+
+	.home-slider {
+		.ci-control-nav {
+			display: none;
+		}
+	}
+
+	.slide-text {
+		padding: 8px 14px;
+		bottom: 12px;
+		right: 12px;
+
+		h2 {
+			margin: 0;
+			font-size: 14px;
+		}
+	}
+
+	.hero-player {
+		margin-bottom: 35px;
+		margin-top: -35px;
+	}
+
+	.hero-player,
+	.ci-soundplayer {
+		height: auto;
+	}
+
+	.ci-soundplayer-controls {
+		margin: 0 auto;
+		float: none;
+	}
+
+	.ci-soundplayer-meta {
+		text-align: center;
+	}
+
+	.track-position {
+		display: none;
+	}
+
+	#map {
+		height: 260px;
+	}
+
+	.tour-thumb {
+		display: none;
+	}
+
+	.tour-dates {
+		.action-btn {
+			position: static;
+			-webkit-transform: none;
+			transform: none;
+		}
+
+		.tour-place {
+			padding-top: 8px;
+		}
+	}
+
+	.filters-nav a {
+		margin-bottom: 5px;
+	}
+
+	.flickr_badge_image {
+		width: 20%;
+	}
+
+	.widget .instagram-pics li {
+		width: 33.3333%;
+	}
+
+	.list-item {
+		display: table;
+		width: 100%;
+
+		> a {
+			display: table-cell;
+			vertical-align: top;
+			width: 42% !important;
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.list-item-info {
+			display: table-cell;
+			vertical-align: top;
+			overflow: hidden;
+			width: 58% !important;
+		}
+	}
+
+	.widget_ci_event_widget {
+		.tour-event-thumb {
+			display: none;
+		}
+	}
+
+	.sidebar {
+		margin-top: 25px;
+	}
+
+	#footer {
+		margin-top: 30px;
+	}
+
+	.woocommerce-tabs {
+		.tabs {
+			li {
+				width: 100%;
+				display: block;
+
+				a {
+					display: block;
+				}
+			}
+		}
+	}
+}

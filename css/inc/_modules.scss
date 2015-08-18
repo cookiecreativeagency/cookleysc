@@ -1,0 +1,546 @@
+/* -----------------------------------------
+	04. Modules
+----------------------------------------- */
+
+/* MODULE: #Homepage Slider
+================================================== */
+#slider {
+	margin-bottom: 60px;
+}
+
+.slide-text {
+	position:absolute;
+	bottom:50px;
+	right:50px;
+	padding:15px 20px 10px 20px;
+	border-radius:2px;
+}
+
+.slide-text h2 {
+	font-size:30px;
+	margin-bottom: 5px;
+	line-height: 1;
+}
+
+.video-slide .fluid-width-video-wrapper {
+	margin-bottom:0;
+	padding-bottom:0;
+}
+
+.home-slider {
+	.ci-control-nav {
+		bottom: 10px;
+		z-index: 10;
+	}
+
+	.ci-control-paging {
+		li {
+			a {
+				transition: opacity 0.18s ease;
+				background-color: #FFF;
+				box-shadow: none;
+				opacity: 0.7;
+
+				&.ci-active {
+					opacity: 1;
+				}
+			}
+
+			a:hover {
+				background-color: #FFF;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.video-slide {
+	iframe {
+		width: 100%;
+		margin: 0;
+		height: 100%;
+	}
+}
+
+/* MODULE: #Overlays
+================================================== */
+
+.overlay-link {
+	position:relative; display:block;
+}
+
+.overlay-link:hover .overlay:before { color:rgba(255,255,255,1); }
+
+.overlay:before {
+	font-family: FontAwesome;
+	font-size:40px;
+	color:rgba(255,255,255,0.7);
+	left: 50%;
+	line-height: 1;
+	margin-left: -20px;
+	margin-top: -20px;
+	position: absolute;
+	text-align: center;
+	top: 50%;
+	width: 40px;
+}
+
+.icon-play:before {
+	content: "\f01d";
+}	
+
+.icon-zoom:before {
+	content: "\f00e";
+}
+
+/* MODULE: #Listings
+================================================== */
+.listing li { 
+	margin-bottom: 30px;
+}
+
+
+/* MODULE: #List items
+================================================== */
+.list-item-info {
+	border: 1px solid $border-color-secondary;
+	@include linear-gradient($grad-bg-top, $grad-bg-bottom);
+	padding: 15px;
+
+	.list-item-head, .list-item-sub {
+		font-weight: 400;
+		font-size: inherit;
+		margin: 0;
+		padding: 0 0 3px 0;
+		line-height: 1;
+	}
+
+	.list-item-sub {
+		color: $text-color-secondary;
+		font-size:14px;		
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.post-cover {
+	img {
+		width: 100%;
+	}
+}
+
+.post-cover, .listing {
+	.list-item-head, .list-item-sub {
+		padding-bottom: 5px;
+	}
+}
+
+/* MODULE: #News
+================================================== */
+
+.post {
+	margin:0 0 40px 0;
+}
+
+.post:last-child {
+	margin-bottom:20px;
+}
+
+.post > *:last-child, .post-body > *:last-child {
+	margin-bottom:0;
+}
+
+.post-intro {
+	position:relative;
+	margin-bottom: 20px;
+}
+
+.post-intro img {
+	display:block;
+}
+
+.post-intro h2 {
+	position:relative;
+	width:80%;
+	margin-bottom:0;
+	line-height: 1.2;
+}
+
+.post-intro img + h2 {
+	position:absolute;
+	bottom:10px;
+}
+
+.post-intro h2 a {
+	font-size:20px;
+	display:block;
+	padding:8px 10px;
+}
+
+.post-intro h2 a:hover { 
+	border:none;
+}
+
+.meta {
+	font-size:10px;
+	font-weight:bold;
+	text-transform: uppercase;
+	margin: 0 0 10px 0;
+}
+
+.meta .bull {
+	font-size:9px;
+	line-height: 1;
+	display:inline-block;
+	margin:0 5px;
+	position:relative;
+	top:-1px;
+}
+
+.entry-terms {
+	margin-top: -30px;
+}
+
+
+/* MODULE: #Meta Items
+================================================== */
+#meta-wrap {
+	margin:20px 0;
+	padding:20px 0 22px 0;
+	border-style: solid;
+	border-width: 1px;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+.item-meta { 
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:0;
+	position:relative;
+}
+
+.item-meta li {
+	margin-bottom:5px;
+}
+
+.item-meta li:last-child {
+	margin-bottom:0;
+}
+
+.item-meta span {
+	display:inline-block;
+	width:120px;
+	margin-right:5px;
+	text-align: right;
+	font-weight: normal;
+}
+
+
+/* MODULE: #Tracklisting
+================================================== */
+.tracklisting {
+	list-style: none !important;
+	margin:0 0 30px 0;
+}
+
+.tracklisting li {
+	min-height: 64px;
+	margin-bottom:-1px;
+	position:relative;
+
+	.widget_ci_tracklisting_widget & {
+		min-height: 54px;
+	}
+}
+
+.tracklisting .track-no {
+	float:left;
+	width:60px;
+	font:900 26px 'Lato', sans-serif;
+	text-align: center;
+	padding:15px 0;	
+}
+
+.tracklisting .track-info {
+	float:left;
+	line-height: 1;
+	padding: 10px 0 0 10px;
+	margin-bottom: 10px;
+}
+
+.tracklisting .track-info .sub-head {
+	display:block;
+}
+
+.tracklisting .track-info .main-head {
+	font-size: 14px;
+}
+
+.tracklisting .track-single .main-head {
+	position:relative; 
+	top:9px;
+}
+
+.tracklisting .track-listen,
+.tracklisting a.sm2_button {
+	display:block;
+	width:30px;
+	height:30px;
+	position:absolute;
+	right:10px;
+	top: 32px;
+	border-radius: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	color: $text-color;
+	@include linear-gradient(lighten($grad-bg-top, 15%), lighten($grad-bg-bottom, 10%));
+	box-shadow: 0 0 2px rgba(black, 0.2);
+	text-align: center;
+	font-size: 14px;
+	line-height: 30px;
+
+	.widget & {
+		top: 25px;
+	}
+}
+
+a.sm2_button {
+	text-indent: 2px;
+
+	&.sm2_playing {
+		text-indent: 0;
+
+		i:before {
+			content: "\f04c";
+		}
+	}
+}
+
+.tracklisting .btns {
+	position:absolute;
+	top:50%;
+	right:50px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.tracklisting .btns a {
+	margin-left:5px;
+}
+
+.tracklisting .track-listen:hover, .tracklisting a.sm2_button:hover {
+	border:none;
+}
+
+.sc-oembed {
+	iframe {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+}
+
+.fluid-width-video-wrapper {
+	margin:0 0 15px 0;
+}
+
+.album .fluid-width-video-wrapper {
+	margin:0 0 0 0;
+}
+
+.track-lyrics-hold {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width: auto;
+	max-width: 400px;
+	margin: 20px auto;
+	color: #666;
+	max-height: 80%;
+	overflow: auto;
+
+	p {
+		margin: 0 0 15px;
+	}
+
+	strong {
+		color: #444;
+	}
+}
+
+
+/* MODULE: #Events
+================================================== */
+.tour-dates {
+	margin-bottom:40px;
+}
+
+.tour-dates li {
+	position:relative;
+}	
+
+.tour-dates .tour-place {
+	padding:15px 0 0 15px;
+	width:auto;
+}
+
+.tour-dates .action-btn {
+	position:absolute; 	
+	right:24px;
+	top:50%;		
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.tour-thumb {
+	float:left;
+}
+
+.tour-thumb img {
+	display:block;
+}
+
+.tour-date {
+	float:left;
+	width:70px;
+	min-height: 86px;
+	text-align: center;
+	padding:10px 0;
+	margin-bottom:0;
+	box-shadow: inset -3px 0 0 rgba(0,0,0,0.1);
+}
+
+.tour-date .day, .tour-date .year {
+	font-weight:900;
+	display:block;
+	line-height: 1;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+}
+
+.tour-date .day, .tour-date .time {
+	font-size:26px;
+}
+
+.tour-date .year, .tour-date .date {
+	font-size:14px;
+}
+
+.tour-place {
+	float:left;
+	width:138px;
+	padding:10px 0 0 15px;
+	line-height: 1;
+
+	.sub-head, .main-head {
+		display: block;
+		padding-bottom: 5px;
+		line-height: 1;
+	}
+
+	.main-head {
+		font-size: 14px;
+		padding-bottom: 6px;
+	}
+}
+
+.tour-date .date {
+	display: block;
+	font-weight: 900;
+}
+
+.tour-date .time {
+	display: block;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+/* map */
+#map {
+	margin-bottom:40px;
+	width:auto;
+	height:400px;
+	font-family:Arial,sans-serif;
+}
+
+#map h3 {
+	line-height: 1;
+	font-size:18px;
+	margin-bottom:5px;
+}
+
+#map h4 {
+	line-height: 1;
+	font-size:14px;
+	margin-bottom:8px;
+}
+
+#map p {
+	line-height:1;
+	font-size:12px;
+}
+
+
+/* #ISOTOPE FILTERING
+================================================== */
+.filters-nav {
+	margin-bottom: 30px;
+}
+
+.filters-nav li {
+	float: left;
+	margin-right: 5px;
+}
+
+.filters-nav li a {
+	border: 1px solid transparent;
+}
+
+.isotope-item {
+	z-index: 2;
+}
+
+
+/* Pagination
+=================================== */
+#paging {
+
+	&.navigation {
+		padding: 10px; 
+	}
+	
+	margin: 40px 0 0;
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			display: inline-block;
+		}
+	}
+
+	a,
+	> span,
+	li span {
+		display: inline-block;
+		text-transform: uppercase;
+		font-size: 13px;
+		color: #FFF;
+		padding: 12px 14px;
+		margin: 0 3px 0 0;
+		line-height: normal;
+		font-style: italic;
+	}
+
+	a:hover {
+
+	}
+
+	.current {
+
+	}
+}

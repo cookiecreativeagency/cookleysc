@@ -1,0 +1,47 @@
+/* -----------------------------------------
+	03. Header
+----------------------------------------- */
+#header {
+	padding:40px 0 0 0;
+}
+
+#logo {
+	margin-bottom: 30px;
+}
+
+#logo h1 {
+	margin: 0;
+}
+
+#logo p {
+	margin: 0;
+}
+
+#logo a:hover {
+	border:none;
+}
+
+.section-title {
+	padding:10px 20px 13px 20px;
+	margin-bottom: 40px;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.4);
+}
+
+.widgets-head {
+	text-align: right;
+	padding-top: 5px;
+
+	.widget {
+		vertical-align: top;
+		margin: 0 10px 0 0;
+		display: inline-block;
+
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+	.widget-title {
+		display: none;
+	}
+}

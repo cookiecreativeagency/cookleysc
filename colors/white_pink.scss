@@ -1,0 +1,19 @@
+$header-bg: "../images/bg_white.png" !default;
+$footer-bg: "../images/bg_footer_white.png" !default;
+$body-bg: #FFFFFF !default;
+$primary-color: #ff0060 !default;
+$primary-color-darker: #c5004a !default;
+$text-color: #434343 !default;
+$text-color-secondary: #626262 !default;
+$text-on-primary: #FFF !default;
+$headings-color: #333333 !default;
+$border-color: #dfdfdf !default;
+$border-color-secondary: #e7e7e7 !default;
+$btn-bg: #eee !default;
+$btn-text-color: #444 !default;
+$input-text-color: #333 !default;
+$grad-bg-top: #FCFCFC !default;
+$grad-bg-bottom: #e8e8e8 !default;
+$bg-darker: #bbbbbb !default;
+
+@import '_base.scss';

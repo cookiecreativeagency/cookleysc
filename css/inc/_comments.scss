@@ -1,0 +1,113 @@
+/* -----------------------------------------
+   06. Comments
+----------------------------------------- */
+#comments {
+	margin: 40px 0 0;
+}
+
+#comment-list {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+
+	ol {
+		list-style: none;
+		margin-left: 30px;
+
+		@media ( max-width: $screen-xs-max ) {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.comment-body {
+		margin-bottom: 20px;
+	}
+}
+
+.comment-body {
+	background-color: $grad-bg-bottom;
+	border: 1px solid $border-color;
+	padding: 15px;
+	border-radius: 2px;
+}
+
+.post-comments {
+	padding-top: 20px;
+	margin: 0 0 45px;
+}
+
+.comment-author .avatar {
+	width: 64px;
+	height: 64px;
+	float: left;
+	margin: 0 15px 15px 0;
+	overflow: visible;
+
+	@media ( max-width: $screen-xs-max ) {
+		display: none;
+	}
+}
+
+.comment-content {
+	overflow: hidden;
+	zoom: 1;
+	font-size: 13px;
+}
+
+.comment-metadata {
+	font-size: 12px;
+	margin: 0 0 5px;
+}
+
+.comment-reply-link {
+	@include linear-gradient($primary-color, $primary-color-darker);
+	color: $text-on-primary;
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 4px 10px;
+	margin-left: 80px;
+	height: auto;
+	width: auto;
+	border-radius: 1px;
+
+	&:hover {
+		color: $text-on-primary;
+	}
+
+	@media ( max-width: $screen-xs-max ) {
+		margin: 0;
+	}
+}
+
+#form-wrapper {
+	padding-top: 20px;
+}
+
+.bypostauthor > article .fn:before {
+	font-family: FontAwesome;
+	content: "\f005";
+	margin: 0 2px 0 -2px;
+	position: relative;
+	top: -1px;
+	font-size: 11px;
+}
+
+#cancel-comment-reply-link {
+	font-size: 13px;
+	font-weight: normal;
+	margin-left: 5px;
+}
+
+.form-allowed-tags,
+.comment-notes {
+	font-size: 12px;
+	line-height: 1.5;
+	color: rgba($text-color, 0.8);
+}
+
+.logged-in-as,
+.comment-notes {
+	font-size: 1em;
+	margin-top: -26px;
+}

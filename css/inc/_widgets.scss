@@ -1,0 +1,391 @@
+/* -----------------------------------------
+	07. Widgets Styling
+----------------------------------------- */
+
+.widget {
+	margin: 0 0 40px;
+}
+
+#footer .widget {
+	margin-bottom: 30px;
+}
+
+#single-sidebar {
+	margin-top: 40px;
+}
+
+.widget p:last-child {
+	margin-bottom: 0;
+}
+
+.widget-title {
+	@extend h3;
+
+	label {
+		text-transform: none;
+		display: block;
+		font-size: inherit;
+		margin: 0;
+		line-height: inherit;
+		font-weight: inherit;
+	}
+}
+
+/* WIDGET: #List Widgets
+========================================= */
+
+.widget {
+	select {
+		width: 100%;
+		padding: 5px 10px;
+		border-radius: 0;
+		border: 1px solid $border-color;
+	}
+}
+
+.widget_meta,
+.widget_pages,
+.widget_categories,
+.widget_archive,
+.widget_nav_menu,
+.widget_recent_entries {
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		ul {
+			margin-left: 15px;
+		}
+
+		li {
+			line-height: normal;
+			display: block;
+			position: relative;
+
+			a {
+				display: block;
+				padding: 11px 0;
+				border-bottom: 1px solid $border-color;
+			}
+
+			&.current-cat,
+			&:hover {
+				> .count {
+
+				}
+			}
+
+			.count {
+				position: absolute;
+				right: 0;
+				top: 8px;
+				font-size: 12px;
+				font-weight: bold;
+				font-style: italic;
+				transition: all 0.18s ease;
+				padding: 4px 3px;
+			}
+		}
+	}
+}
+
+.widget_recent_comments {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			display: block;
+			padding: 11px 0;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}
+
+.widget_pages,
+.widget_categories,
+.widget_archive {
+	select {
+		@include select-style;
+	}
+}
+/* WIDGET: #Ads125
+========================================= */
+
+#ads125,
+.ads125 {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		background: none;
+		border: none;
+		float: left;
+		margin: 0 15px 10px 0;
+		padding: 0;
+		max-width: 125px;
+		height: auto;
+	}
+}
+
+/* WIDGET: #Search
+========================================= */
+
+.searchform {
+	> div {
+		position: relative;
+	}
+
+	input[type="text"],
+	input[type="search"] {
+		// Styling for the search input if required
+	}
+
+	.searchsubmit {
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		font-size: 13px;
+		padding-top: 9px;
+	}
+}
+
+/* WIDGET: #Flickr
+========================================= */
+
+.flickr_badge_image {
+	border-bottom: 0;
+	padding: 0;
+	float: left;
+	width: 25%;
+
+	img {
+		width: 100%;
+	}
+
+	a {
+		display: block;
+		line-height: 0;
+	}
+}
+
+/* WIDGET: #About
+========================================= */
+
+.widget_about {
+	margin-top: -5px;
+
+	img {
+		max-width: 100px;
+		height: auto;
+	}
+
+	.alignleft {
+		float: left;
+		margin: 5px 15px 6px 0;
+	}
+
+	.alignright {
+		float: right;
+		margin: 5px 0 6px 15px;
+	}
+}
+
+/* WIDGET: #Text Widget
+========================================= */
+
+.widget_text p:last-child {
+	margin-bottom: 0;
+}
+
+/* WIDGET: #Twitter
+========================================= */
+
+.widget_ci_twitter_widget {
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			margin-bottom: 12px;
+		}
+
+		li:first-child {
+			padding-top: 0;
+		}
+	}
+
+	.twitter-time {
+		display: block;
+		font-size: 0.85em;
+	}
+}
+
+/* WIDGET: #Calendar
+================================================== */
+
+#wp-calendar {
+	width: 100%;
+
+	a {
+		font-weight: bold;
+		font-style: italic;
+	}
+
+	caption {
+		text-align: left;
+		margin-top: 10px;
+		background: none repeat scroll 0 0 rgba(0, 0, 0, 0.03);
+		padding: 9px;
+	}
+
+	thead {
+		font-size: 10px;
+
+		th {
+			background: rgba(0, 0, 0, 0.1);
+			font-weight: bold;
+			padding: 8px;
+		}
+	}
+
+	tbody {
+		td { background: none; border: 1px solid rgba(0, 0, 0, 0.1); text-align: center; padding: 3px;}
+		td:hover { background: rgba(0, 0, 0, 0.1); }
+		.pad { background: none; }
+	}
+
+	tfoot {
+		#next { font-size: 10px; text-transform: uppercase; text-align: right; }
+		#prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }
+	}
+}
+
+/* WIDGET: #Social Icons (HTML only)
+========================================= */
+
+.social-icon i {
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	background-color: #333;
+	color: #FFF;
+	border: 1px solid #333;
+	font-size: 24px;
+	border-radius: 36px;
+	text-align: center;
+	display: inline-block;
+}
+
+.social-icon:hover i {
+	background-color: #575757;
+}
+
+
+/* WIDGET: #Tour Dates
+================================================== */
+
+.widget .tour-dates { margin-bottom:0; }
+
+.widget .tour-dates li, 
+.events .tour-dates li {
+	margin-bottom:-1px;	
+}
+
+.widget .tour-dates .action-btn {
+	position: static;
+	-webkit-transform: none;
+	transform: none;
+}
+
+.widget .tour-dates .tour-place {
+	padding-top: 8px;
+}
+
+.widget_ci_events_widget .list-item-sub a { padding-bottom:0; }
+
+
+/* WIDGET: #Tour Event
+================================================== */
+
+.widget .tour-event-thumb {
+	display:block;
+	margin-bottom:0;
+}
+
+.widget .tour-event-thumb a {
+	padding-bottom:0;
+	display:block;
+}
+
+.widget .tour-event-thumb img {
+	display:block;
+}
+
+.widget .tour-date {
+	margin-bottom:0;
+}
+
+
+/* WIDGET: #Discography
+================================================== */
+
+.widget_ci_discography_widget .list-item {
+	margin-bottom:1px;
+}
+
+.widget_ci_tracklisting_widget .track-info span {
+	width:110px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.widget_ci_tracklisting_widget .tracklisting {
+	margin-top:-1px;
+}
+
+	
+/* WIDGET: #Latest Album
+================================================== */
+
+.track-audio { clear:both; display:none; }
+	
+
+/* WIDGET: #Latest Videos
+================================================== */
+
+.list-item-video { position:relative; }
+
+.list-item-video a span {
+	width:53px;
+	height:53px;
+	display:block;
+	position:absolute;
+}
+
+.mejs-container { z-index: 500 !important; }
+
+.video-player {
+	margin: 0 auto;
+
+	.mejs-container {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	video {
+		outline: 0;
+		margin: 0;
+		max-width: none;
+	}
+}
+
+.mfp-inline-holder .mfp-content {
+	width: auto;
+}
